@@ -18,3 +18,4 @@ terraform {
 resource "aws_instance" "example" {
   ami           = "ami-00224432b596f1c45"
   instance_type = "t2.micro"
+       }
