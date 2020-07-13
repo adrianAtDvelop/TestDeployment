@@ -34,4 +34,9 @@ resource "aws_elastic_beanstalk_environment" "tfenvtest" {
     name = "IamInstanceProfile"
     value = "aws-elasticbeanstalk-ec2-role"
   }
+  setting {
+    namespace = "aws:autoscaling:launchconfiguration"
+    name = "InstanceType"
+    value = "t2.micro"
+  }
 }
