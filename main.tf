@@ -27,6 +27,6 @@ resource "aws_elastic_beanstalk_application" "tftest" {
 
 resource "aws_elastic_beanstalk_environment" "tfenvtest" {
   name                = "tf-test-name"
-  application         = "${aws_elastic_beanstalk_application.tftest.name}"
+  application         = "aws_elastic_beanstalk_application.tftest.name"
   solution_stack_name = "64bit Windows Server Core 2019 v2.5.7 running IIS 10.0"
 }
